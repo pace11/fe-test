@@ -1,9 +1,27 @@
 {
+<<<<<<< HEAD
   "short_name": "FE_TEST",
   "name": "Frontend Test",
   "icons": [
     {
       "src": "/images/Logo192x192.png",
+=======
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+>>>>>>> 724f5459a52aee9234410131a30697894885f9ab
       "type": "image/png",
       "sizes": "512x512"
     }
