@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Theme from './uikit/common/theme'
+import { BeatLoader } from 'react-spinners'
+import theme from './uikit/common/theme'
 
 const Container = styled.div`
   width: 100%;
@@ -8,53 +9,22 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${Theme.colors.gradientRed};
+  background: ${theme.colors.blue2};
   flex-direction: column;
-  svg {
-    margin-left: 15px;
-    transform: scale(0.7);
-  }
-  p {
-    font-weight: bold;
-    color: ${Theme.colors.white};
-    font-size: 20px;
-  }
-`
-
-const WrapperLogo = styled.div`
-  width: 150px;
-  height: 120px;
-  border-radius: 15px;
-  overflow: hidden;
   img {
-    width: 100%;
-    height: 100%;
-  }
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
-`
-
-const Copyright = styled.div`
-  text-align: center;
-  p {
-    font-size: 14px;
-    text-decoration: underline;
-    margin: 0;
-  }
-  small {
-    color: ${Theme.colors.white};
+    margin-bottom: 20px;
   }
 `
 
 export default function SplashScreen() {
   return (
     <Container>
-      <p>COVID 19 APPS MONITORING</p>
-      <WrapperLogo>Pace</WrapperLogo>
-      Loading ...
-      <Copyright>
-        <p>by @ryanpace11</p>
-        <small>App version 1.0.0</small>
-      </Copyright>
+      <img
+        src={require('./assets/image/jubelio.png')}
+        alt="logo"
+        width="200px"
+      />
+      <BeatLoader color={theme.colors.blue} />
     </Container>
   )
 }
